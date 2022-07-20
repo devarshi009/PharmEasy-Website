@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .nav{
+            background: teal;
+            color:white;
+            padding:10px;
+        }
+        /* input{
+            height:20px;
+            width:40%;
+            margin-top:20px;
+        } */
+        input[type="number"]{
+            width:100%;
+            padding:12px;
+            border:1px solid black;
+            margin-top:15px;
+            border-radius: 4px;
+            margin-bottom:16px;
+            resize:vertical;
+        }
+        #submit{
+            padding:20px;
+            width:100%;
+            background: teal;
+            color:white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+    
+
+
+</head>
+<body>
+    <div id="container">
+        <div class="nav">
+            <h2>Quick Login</h2>
+        </div>
+        <div>
+            <form action="">
+        <input type="number" name="number" id="num" placeholder="Enter your phone number">
+        <br>
+        <input type="number" name="otp" id="otp" placeholder="Enter otp">
+        <br>
+        <input type="submit" name="" id="submit">
+    </form>
+        <!-- <p>By clicking continue,you agree with our Privacy Policy</p> -->
+    <div>
+      <a href="signup.html"></a>  
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+     let loginArr=JSON.parse(localStorage.getItem("signup"))||[]
+    document.querySelector("form").addEventListener("submit",login)
+    function login(){
+        event.preventDefault();
+       
+        let num=document.querySelector("#num").value
+         let  otp=document.querySelector("#otp").value
+        //  console(num,otp)
+        //  console.log(loginArr);
+         flag=false;
+        for(i=0;i<loginArr.length;i++){
+            if(loginArr[i].num==num && loginArr[i].otp==otp){
+                flag=true;
+                window.location.href="index.html"
+               return alert("login sucessfully")
+            }
+    
+    }
+         if(flag==false){
+            alert("wrong credentials")
+         }
+        }
+</script>

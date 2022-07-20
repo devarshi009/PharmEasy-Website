@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+<style>
+    
+    .nav{
+        background: teal;
+        color:white;
+        padding:10px;
+    }
+    /* input{
+        height:20px;
+        width:40%;
+        margin-top:20px;
+    } */
+    input[type="number"]{
+        width:100%;
+        padding:12px;
+        border:1px solid black;
+        margin-top:15px;
+        border-radius: 4px;
+        margin-bottom:16px;
+        resize:vertical;
+    }
+    #submit{
+        padding:20px;
+        width:100%;
+        background: teal;
+        color:white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+
+
+</head>
+<body>
+    <div id="container">
+        <div class="nav">
+            <h2>Quick Login / Register</h2>
+        </div>
+        <div>
+            <form action="">
+        <input type="number" name="number" id="num" placeholder="Enter your phone number">
+        <br>
+        <input type="number" name="otp" id="otp" placeholder="Enter otp">
+        <br>
+        <input type="submit" name="" id="submit">
+    </form>
+        <p>By clicking continue,you agree with our Privacy Policy</p>
+    <div>
+        <a href="login.html"></a></div>
+    </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",signup)
+ let signupArr=JSON.parse(localStorage.getItem("signup"))||[]
+
+
+    function signup(){
+        event.preventDefault();
+
+        let obj={
+            num:document.querySelector("#num").value,
+            otp:document.querySelector("#otp").value
+        }
+signupArr.push(obj)
+localStorage.setItem("signup",JSON.stringify(signupArr))
+console.log(num.value,otp)
+if(num.value==""||otp.value==""){
+    alert("please fill the details")
+}else{
+    alert("Signup Sucessfully")
+
+window.location.href="login.html"  
+    }
+} 
+</script>
