@@ -4,74 +4,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #container{
-            border:1px solid blue;
-            height: 100px;
-            width:100%;
-            display:flex;
-            background: teal;
-            
-        }
-        .nav{
-            border:1px red;
-            height:100%;
-            width:100%;
-            display:flex;
-            gap:20px
-        }
-        .nav>div{
-            border:1px solid blue;
-            height:100%;
-            width:50%;
-            line-height: 10px;
-
-        }
-        
-        .nav>div:nth-child(1){
-            width:200px
-        }
-        input{
-            /* display:block; */
-             /* margin:15px;  */
-            width:70%;
-            margin-top:20px;
-            padding-top:30px
-        }
-        select,value{
-        width:30%;
-        padding-top:30px;
-        font-size:20px;
-        color:teal;
-        
-        
-        }
-        
-        
-    </style>
+   <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
     <div id="container">
         <div class="nav">
-       
-        <div>
-            
-        <p>Take it easy</p>
-        <h1>pharmEasy</h1>
-
-        </div>   
-       
-        <div>
-            <select  id="pin">
-            <option value="select">Select Pin</option>
-            <input type="text" placeholder="Search medicines/Healthcare products"/>
-        </select>
-        
-             
-        
-        
+        <div id="left">
+            <p>Take it easy</p>
+            <h1>PharmEasy</h1>
         </div>
+           <div id="mid">
+             <!-- <select  id="pin">
+                <option value="select">Select Pin</option> --> 
+                <input type="text" placeholder="Search medicines/Healthcare products"/>
+                
+            <!-- </select>  -->
+            </div>
+        </div>
+           <div id="below">
+        <div id="Left">
+            <p>Order Medicine</p>
+            <p>Healthcare Products</p>
+            <p>Lab Tests</p>
+            <p>RTPCR</p> 
+        </div>
+           
+        <div id="Right">
+            <p>Offers</p>
+           <p> Login/Signup</p>
+           <p>Cart</p> 
+          
+         </div>   
+       </div>
     </div>
-    </div>
-</body>
+       </body>
 </html>

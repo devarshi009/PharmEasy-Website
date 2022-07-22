@@ -1,0 +1,38 @@
+#daughter{
+    width:90%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:100px;
+    gap:20px;
+/* padding:20px; */
+margin:80px 40px;
+    /* /* height:100px;
+    width:90%;
+    margin-top:50px;
+    margin-left:80px; */
+    background:#58a5f0; 
+}
+#daughter>div{
+
+}
+img{
+    width:70%;
+     height:100%; 
+
+}
+#daughter>div>p{
+    color:red;
+    font-size:22px;
+    margin-top:30px;
+/* 
+   margin-left:300px;
+    margin-bottom:550px;  */
+    font-weight: bold;
+}
+#con{
+    /* width:30%; */
+    /* height:30px; */
+     
+    /* margin-left:800px;
+    margin-top:200px;  */
+}

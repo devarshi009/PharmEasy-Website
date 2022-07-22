@@ -1,0 +1,16 @@
+#off{
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: 100px;
+    border:1px solid brown;
+    gap:20px;
+}
+#off>div{
+    border:1px solid red;
+    display:grid;
+   
+}
+.main>img{
+    width:20%;
+    height:20%;
+}

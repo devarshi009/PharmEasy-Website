@@ -1,24 +1,4 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>crauser</title>
- <link rel="stylesheet" href="crauser.css">
-    
-
-
-</head>
-<body>
-    <div>
-        <img id="crauser" src="https://cms-contents.pharmeasy.in/banner/7d22c648435-200.jpg?dim=1440x0&dpr=1&q=100" alt="">
-       <button id="left-btn"><</button>
-       <button id="right-btn">></button>
-    </div>
-</body>
-</html> 
- <script>
-    let imagesLink=[
+let imagesLink=[
     "https://cms-contents.pharmeasy.in/banner/7d22c648435-200.jpg?dim=1440x0&dpr=1&q=100",
     "https://cms-contents.pharmeasy.in/banner/3f636edf697-GRAND1000_Dweb.jpg?dim=1440x0&dpr=1&q=100",
     "https://cms-contents.pharmeasy.in/banner/f9f04ebe8e7-Dweb.jpg?dim=1440x0&dpr=1&q=100",
@@ -43,4 +23,3 @@ let rightBtn=document.getElementById("right-btn");
     }
     crauser.src=imagesLink[imageState]
  })
-</script> 

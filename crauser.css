@@ -1,0 +1,33 @@
+#crause{
+   height:200px;
+   width:100%;
+   margin-top:120px;
+
+}
+
+
+
+#crause>div{
+     width: 100%; 
+    position:relative; 
+     
+    
+}
+img{
+   width: 100%;
+}
+button{
+   position:absolute;
+   top:40%;
+background: rgba(100,100,100,0.4);
+border:none;
+font-size: 1.5rem;
+color:white
+}
+button:nth-child(2){
+   left:10px;
+
+}
+button:nth-child(3){
+   right:10px;
+}

@@ -4,106 +4,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="navbar.html">
-    <link rel="stylesheet" href="crauser.html">
-    <style>
-        
-            #child{
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,80px); 
-        border:1px solid red;
-        gap:0px 20px;
-         grid-template-areas: 
-        "a1 a3 a5"
-        "a2 a4 a6" 
-    }
-    #child>div{
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,80px);
-        /* border:1px solid red; */
-        gap:0px 20px;
-        
-            border:1px solid blue;
-           
-        }
-        #child>div:nth-child(1){
-            background: teal;
-            grid-area:a1;
-            
-            
-        } 
-        #child>div:nth-child(2){
-           
-            grid-area:a2;
-            
-        }  
-         #child>div:nth-child(3){
-            background: orange;
-            grid-area:a3;
-            
-        }  
-        #child>div:nth-child(4){
-            
-            grid-area:a4;
-            
-        }  
-        #child>div:nth-child(5){
-            background:aquamarine;
-            grid-area:a5;
-            
-        }  
-         #child>div:nth-child(6){
-            
-            grid-area:a6;
-            
-        }  
-        #child>div>img{
-            width:100%;
-            height:150px;
-            /* margin-left:10px; */
-           
-        }
-       h2{
-    white-space: nowrap;
-    margin-right:0px;
-    margin-top:20px;
-       } 
-       p{
-        white-space: nowrap;
-        margin-top: 0px;
-        
-        background: red;
-       } 
-        
-       button{
-        
-        padding:2px;
-        position:relative;
-        top:0;
-        left:20px
-        
-       } 
-       #1{
-        background:teal;
-       }
-       #2{
-        background:orange;
-       }
-       button:nth-child(3){
-        background:orange;
-       }
-;
-       
-    </style>
+      <link rel="stylesheet" href="newnav.css"> 
+  <link rel="stylesheet" href="crauser.css">   
 
-
-
+    <link rel="stylesheet" href="midbox.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="father.css">
+    <link rel="stylesheet" href="offers.css">
+    <link rel="stylesheet" href="off.css">
+    
 </head>
 <body>
-<div id="container">
-    <div id="child">
+    <div id="container">
+        <!-- -----------------navbar------------------------- -->
+        <div  class="navi">
+        <div class="icon">
+            <p>Take it easy</p>
+            <h1>PharmEasy</h1>
+        </div>
+           
+               
+           
+               <div class="search-box">
+                 
+                <select name="" id="select">
+                    <option value="">Select Pin</option>
+                </select>
+                     <input type="search" placeholder="Search medicines/Healthcare products"> 
+            <span class="fa fa-search"></span>
+            
+                
+                </div>
+            
+            
+            <div>
+                
+            </div>
+               
+            <div>
+                <ol>
+                    <li> <a href="#">Order Medicine</a></li>
+                    <li> <a href="#">Healthcare Products</a></li>
+                    <li> <a href="#">Lab Tests</a></li>
+                    <li> <a href="#">RTPCR</a></li>
+                     
+                     
+                     
+                 
+                <li> <a href="#">Offers</a></li>
+                <li> <a href="#"> Login/Signup</a></li>
+               <li> <a href="#">Cart</a></li>
+            </ol>
+               
+             </div>   
+     
+        </div>
+     <!-- <! ------------------------crauser-----------------        -->
+     <div id="crause">
+        <img id="crauser" src="https://cms-contents.pharmeasy.in/banner/7d22c648435-200.jpg?dim=1440x0&dpr=1&q=100" alt="">
+       <button id="left-btn"><</button>
+       <button id="right-btn">></button>
+    </div>
+    <script src="crauser.js"></script>
+    <!-- --------                       ---3rdnd page-------------------------- -->
+<div id="mid-box">
+    <div id="midbox">
     
    
         <div>
@@ -112,7 +77,7 @@
             <img src="https://assets.pharmeasy.in/web-assets/dist/7c645a8d.png?dim=186x0&dpr=1.25&q=100" alt="">
            
         </div>
-       <div> <button >Order Now</button></div>
+       <div> <button id="A1">Order Now</button></div>
             
         
        <div>
@@ -120,7 +85,7 @@
             <h2>Healthcare Products</h2>
             <img src="https://assets.pharmeasy.in/web-assets/dist/c7c7095b.png?dim=186x0&dpr=1.25&q=100" alt="">
         </div>
-        <div><button id="2">Order Now</button></div>
+        <div><button id="A2">Order Now</button></div>
         
             
         
@@ -130,21 +95,63 @@
             <img src="https://assets.pharmeasy.in/web-assets/dist/e1d3ac1c.png?dim=186x0&dpr=1.25&q=100" alt="">
            
         </div>
-        <div><button id="3">Book Now</button></div>
-           
+        <div><button id="A3">Book Now</button></div>
+    </div>    
         
     
 </div>
-</div>   
+  <!-- -----------------------------father-daughter box-------------- -->
+<div id="daughter">
+  
+  <div>
+  
+    <img src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png" alt="">
+</div>
+<div>
+    <p>Save flat 5% extra on medicine & enjoy FREE delivery with PLUS membership</p>
+</div>
+<div>
+<img id="con" src="https://assets.pharmeasy.in/web-assets/dist/b20b0932.png" alt="">
+</div>
+
+</div>
+<!-- ----------------------------------------------------------------- -->
+<div id="offer">
+<img src="https://assets.pharmeasy.in/web-assets/dist/67890676.svg" alt="">
+    <h2>Offers for You</h2>
+</div>
+<!-- -- ----------------------------offer---------------------------------  -->
        
+   <div id="off">
+    <div class="main">
+        <div>
+            <img src= alt="">
+            </div>
+        <div>
+            <p>Test - Flat 25% OFF </p>
+            <h4> Code: MEGA25</h4>
+        </div>
     
-    
-       
-    
+    </divclas>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
    
    
+</div>
 </body>
+
 </html>
-<script>
+
     
-</script>
