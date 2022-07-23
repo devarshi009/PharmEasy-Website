@@ -1,0 +1,30 @@
+#health{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px;
+    gap:40px;
+    margin-top:400px;
+    justify-content:center;
+    align-items: center;
+}
+#health>div{
+    
+}
+#health>div>img{
+    width:100%;
+}
+#health>div>p{
+    /* white-space:pre-line; */
+    display:inline-block;
+    width:300px;
+     white-space:nowrap; 
+    overflow:hidden !important;
+    text-overflow: ellipsis;
+}
+#article{
+    color:teal;
+}
+#health-article{
+    position: relative;
+    top:330px;
+}

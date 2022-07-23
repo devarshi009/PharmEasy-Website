@@ -1,14 +1,11 @@
-/* #offer>h2{
-    position:absolute;
-    left:100px;
-} */
 #offer{
-  margin-top:20px;
+  height: 40px;
+  width:40px;
   display:flex;
-  gap:10px;
-  
+  position:relative;
+  bottom:20px;
 }
-#offer>img{
-    height:50%;
-    width:3%;
+#offer>h1{
+  font-weight: bold;
+  
 }

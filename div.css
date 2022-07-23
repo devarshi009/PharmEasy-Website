@@ -1,0 +1,9 @@
+#container{
+    display: grid;
+    border:2px solid blue;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows:100px;
+}
+#container>div{
+    border:2px solid red;  
+}
