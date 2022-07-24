@@ -245,7 +245,7 @@ position:absolute;
 
 }
 #never{
-padding:10px 25px;
+ padding:10px 25px; 
 margin:15px 20px;
 background: #03a9f4;
 border:none;
@@ -255,15 +255,17 @@ font-size: 20px;
 position:absolute;
 
 
+
+
 }
 #item>div>p{
-    color:white;
+    color:red;
 }
 #align>div>p{
-    color:white;
+    color:red;
 }
 #center>div>p{
-    color:white;
+    color:red;
 }
 #item>div>h2{
     margin-left:30px;
